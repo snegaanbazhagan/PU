@@ -1,0 +1,305 @@
+/*------------ Color Palette ------------*/
+/*
+LIGHT ORANGE: #e4644b
+DARK ORANGE: #d05942
+LIGHT BLUE: #40529B
+DARK BLUE: #263A8D
+LIGHT TEAL: #008080;
+DARK TEAL: #006868; 
+DARK BROWN: #484141
+Menu text: #f7f1e3
+Submenu text: #ae9f9f
+*/
+
+/*------------ General Settings ------------*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+
+
+#header-left{
+   height: 43px;
+   border-bottom: 1px solid #b6dfef;
+   box-shadow: 0px 0px 5px #b6dfef;
+}
+#header-right{
+    background-color: white;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+#header-item-right{
+    width:auto;
+    }
+    
+#left-item{
+    padding: 10px;
+    text-align: center;
+}
+.user-logo img{
+    padding: 3px;
+    /*border:.5px solid rgba(249,249,249,0.65);*/
+    width:40%; 
+}
+.img-rounded {
+    padding: 3px;
+    /*border:.5px solid rgba(249,249,249,0.65);*/
+    width:10%;  
+}
+.blur-bg img {
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+z-index:-1;
+height: auto;
+    opacity: 0.05;
+}
+
+#header-item-pu{
+    padding-top: 5px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #FFF;  
+    text-shadow: 2px 2px 10px rgba(0, 0, 5, 0.44);
+}
+#header-item{
+    padding-top: 10px;
+    font-size: 1.2em;
+    text-align: center;
+    color: #9c9696;  
+    text-shadow: 0px 0px 5px rgba(0, 0, 5, 0.2);
+}
+#username_head{
+    padding:0px 10px 10px;
+}
+
+
+nav-log {
+  /*margin-top: 40px;
+  padding: 24px;*/
+  text-align: center;
+  font-family: Raleway;
+  /*box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);*/
+  float: right;
+}
+
+#nav-3 {
+  background: #fff;
+}
+
+
+.link-3 {
+  transition: 0.4s;
+  color: #9c9696;
+  text-decoration: none;
+  padding: 0 10px;
+}
+.link-3:hover {
+  background-color: #0ba1d0;;
+  color: #fff;
+  padding: 15px 10px 13px;
+  text-decoration: none;
+}
+
+
+/*Custome menu ends*/
+
+
+
+/* for toggle menu*/
+
+.left-menu{
+
+}
+
+#menu {
+color:#f9f9f9;
+
+height: -webkit-fill-available;
+overflow-y: auto;
+background: rgb(0, 0, 0);
+z-index: 999;
+position: fixed;
+width: 0%;
+box-shadow: 0px 0px 10px black;
+background: #52ccea; /* Old browsers */
+background: -moz-linear-gradient(top, #52ccea 0%, #2c98e0 100%, #2c98e0 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #52ccea 0%,#2c98e0 100%,#2c98e0 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #52ccea 0%,#2c98e0 100%,#2c98e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52ccea', endColorstr='#2c98e0',GradientType=0 ); /* IE6-9 */
+
+transition: all 0.5s ease;
+}
+
+#menu.open {
+    /*
+left: 0;
+width: auto;
+    */
+left: 0;
+width: 20%;
+transition: all 0.5s ease;
+}
+
+#menu-toggle {
+
+color:#f9f9f9;
+position:fixed;
+top: 50px;
+left: 0%;
+float:right;
+background: #52ccea;;
+z-index: 1000;
+padding-left: 5px;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-right: 5px;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+transition: all 0.5s ease;
+}
+
+#menu-toggle:hover {
+cursor: pointer;
+}
+
+#menu-toggle.open {
+transition: all 0.5s ease;
+left: 20%;
+}
+
+
+
+
+
+ul {
+  /*width: 220px;*/
+  list-style: none;
+}
+
+li { cursor: pointer; }
+
+/*------------ Themes ------------*/
+
+.blue { 
+    /*background-color: #337ab7; */
+ 
+}
+
+.blue-border { /*border-top: 1px solid #263A8D;*/ }
+
+.teal { background-color: #008080; }
+
+.teal-border { border-top: 1px solid #006868; }
+
+
+
+/*------------ Main Menu ------------*/
+
+.mainmenu {
+  font-size: 14px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  /*
+  border-top: solid 1px #FFF;
+  border-bottom: solid 1px #FFF;
+  box-shadow: 0 5px 10px rgba(0,0,0,.35);
+  border-radius: 7px;
+  */
+}
+
+.mainmenu > li {
+  box-sizing: border-box;
+
+  color: #f7f1e3;
+}
+
+.mainmenu > li :hover{
+border-left: solid 2px #FFF;
+}
+
+.mainmenu > li:first-child {
+  border-top: 0;
+  /*border-radius: 7px 7px 0 0;*/
+  border-left: solid 2px #FFF;
+  
+}
+
+.mainmenu > li:last-child { border-radius: 0 0 7px 7px; }
+
+.mainmenu > li span {
+  line-height: 40px;
+  padding-left: 20px;
+  display: block;
+}
+
+.mainmenu > li .icon {
+  display: block;
+  float: left;
+  width: 20px;
+  height: 20px;
+  padding: 14px 20px 0 20px;
+}
+
+.mainmenu > li .messages {
+  font-size: 11px;
+  line-height: 19px;
+  display: block;
+  float: right;
+  width: 34px;
+  height: 18px;
+  margin-top: -33px;
+  margin-right: 19px;
+  padding: 0;
+  text-align: center;
+  /*background: url("/assets/retina/images/messages.png") no-repeat;*/
+}
+
+.expand-triangle {
+  width: 220px;
+  content: " ";
+  margin-left: -40px;
+}
+
+.expand-triangle img {
+  width: inherit;
+  height: inherit;
+  vertical-align: top;
+}
+
+/*------------ Sub Menu ------------*/
+
+.submenu {
+  font-size: 13px;
+  box-sizing: border-box;
+  content: " ";
+  color: #f5f5f5;
+}
+
+.submenu li {
+  line-height: 20px;
+  height: 35px;
+  margin-left: -40px;
+  padding-top: 11px;
+  transition: border-left 220ms ease-in;
+  border-left: solid 6px #484141;
+  background-color: #484141;
+}
+
+.submenu .chosen, .submenu .chosen:hover { border-left: solid 6px #96d145; }
+
+.submenu li:hover { border-left: solid 6px #ae9f9f; }
+
+.submenu li span { margin-left: 30px; }
+
+a.blue{
+    color:#52ccea;
+}
+a.white{
+    color:#ffffee;
+}
+a.submenu{
+    color:#ffffee;
+}
+
